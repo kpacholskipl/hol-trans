@@ -1,4 +1,4 @@
-# hol-trans
+# Hol-trans page
 
 ## Project setup
 ```
