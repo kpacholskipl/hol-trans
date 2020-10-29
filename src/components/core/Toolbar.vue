@@ -58,7 +58,7 @@
 
     data: () => ({
       isTransparent: true,
-      offset: 100,
+      offset: 70,
       duration: 1000,
       drawer: false,
       easing: 'easeInOutCubic',

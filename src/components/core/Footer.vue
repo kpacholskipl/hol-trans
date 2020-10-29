@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer style="background-color: black">
     <v-card
       class="flex justify-center"
       color="black"
@@ -7,7 +7,7 @@
       style="height: auto"
       tile
     >
-      <v-card-title class="justify-center" dark>
+      <v-card-title class="justify-center" style="height: 100%;width: 100%" dark>
         <p style="font-size: 0.001rem">Usługi holowania samochodów osobowych.
           Usługi holowania samochodów dostawczych.
           Usługi holowania samochodów osobowych i ciężarowych.
@@ -39,7 +39,7 @@
         <strong class="footer-text pa-3">&copy; <a class="footer-text__item" href="http://kpacholski.pl">kpacholski.pl
 
         </a> &
-          <a style="color: white">mboguslawski.pl
+          <a style="color: white !important;">mboguslawski.pl
           </a>
         </strong>
       </v-card-title>
