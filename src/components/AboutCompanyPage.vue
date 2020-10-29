@@ -1,6 +1,6 @@
 <template>
   <div class="about-company-page" id="about" ref="about">
-    <h1 class="offer-page__title--main text-xs-center mb-5">
+    <h1 class="about-company-page__title--main mb-5">
       <hr>
       Kilka słów o nas
     </h1>
@@ -8,12 +8,14 @@
       <v-layout row wrap>
         <v-flex lg6 sm12 xs12 class="about-company-page__text">
           <blockquote class="pl-5 pr-5 mb-5">
-            Firma powstała w 2000 roku. Świadczymy pomoc drogą 24h na dobę przez 7 dni w tygodniu na terenie całego kraju i zagranicy.
+            Firma powstała w 2000 roku. Świadczymy pomoc drogą 24h na dobę przez 7 dni w tygodniu na terenie całego
+            kraju i zagranicy.
             Działamy szybko i skutecznie, świadcząc pomoc drogową
             w miejscach wypadków i awarii samochodów ciężarowych
             i osobowych. Jesteśmy gotowi do podjęcia interwencji o każdej porze w najkrótszym możliwym czasie.
-<br><br>
-            Jako firma z długoletnim doświadczeniem oferujemy również transport wozków widłowych, maszyn rolniczych i budowlanych.
+            <br><br>
+            Jako firma z długoletnim doświadczeniem oferujemy również transport wozków widłowych, maszyn rolniczych i
+            budowlanych.
             Zajmujemy się również wypożyczaniem samochodów zastępczych. Dodatkowo proponuejmy wynajem lawet.
             Dysponujemy specjalistycznym sprzętem najwyższej klasy!
           </blockquote>
@@ -34,11 +36,9 @@
               v-for="(item,i) in items_mobile"
             ></v-carousel-item>
           </v-carousel>
-
         </v-flex>
       </v-layout>
     </v-container>
-
   </div>
 </template>
 <script>
@@ -78,3 +78,29 @@
     },
   }
 </script>
+<style lang="scss" scoped>
+  .about-company-page {
+    height: auto !important;
+
+    &__slider {
+      float: right;
+    }
+
+    &__title--main {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 40px;
+      color: black;
+      text-align: center;
+    }
+
+    &__text {
+      float: left;
+      margin: auto;
+      font-size: 135%;
+      @media only screen and (max-width: 600px) {
+        font-size: 110%;
+        margin-bottom: 5vh !important;
+      }
+    }
+  }
+</style>

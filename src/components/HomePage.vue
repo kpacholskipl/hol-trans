@@ -1,21 +1,36 @@
 <template>
   <div class="homepage" id="homepage" ref="homepage">
-    <!--<a href="tel:697919264"> <img class="animation-from-left" style="width: 80vw" src="@/assets/images/pomoc_drogowa.jpg"></a>-->
-    <div class="hidden-md-and-down" style="padding-top: 10vh">
-      <p class="font-italic display-4" >Pomoc drogowa</p>
-      <a  href="tel:609049726" class="font-weight-black display-3">609 049 726</a>
-    </div>
-    <div class="hidden-lg-and-up hidden-sm-and-down" style="padding-top: 8vh">
-      <p class="font-italic display-3" >Pomoc drogowa</p>
-      <a  href="tel:609049726" class="font-weight-black display-3">609 049 726</a>
-    </div>
-    <div class="hidden-md-and-up hidden-xs-only" style="padding-top: 15vh">
-      <p class="font-italic display-3 BOLD" >Pomoc drogowa</p>
-      <a  href="tel:609049726" class="font-weight-black display-3">609 049 726</a>
-    </div>
-    <div class="hidden-sm-and-up" style="padding-top: 15vh">
-      <p class="font-italic display-2" >Pomoc drogowa</p>
-      <a  href="tel:609049726" class="font-weight-black display-3">609 049 726</a>
+    <div class="homepage-text">
+      <p class="homepage-text__title">Pomoc drogowa</p>
+      <a class="homepage-text__number" href="tel:609049726">609 049 726</a>
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+  .homepage {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/images/tlo3.jpg") no-repeat;
+    background-size: cover;
+    @media only screen and (max-width: 800px) {
+      background: url("../assets/images/mobile.jpg");
+      background-size: cover;
+    }
+    &-text {
+      padding-top: 10vh;
+
+      &__title {
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      &__number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: yellow !important;
+      }
+    }
+  }
+</style>
