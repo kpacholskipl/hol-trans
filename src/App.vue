@@ -4,7 +4,7 @@
 
     <core-view />
 
-    <core-footer />
+<!--    <core-footer />-->
   </v-app>
 </template>
 
