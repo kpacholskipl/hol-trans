@@ -5,7 +5,7 @@
       class="menu-container hidden-sm-and-down"
       v-scroll="onScroll">
       <v-toolbar-title>
-        <img @click="" class="menu-logo" src="@/assets/images/logo.png"/>
+        <img @click="go('#homepage')" class="menu-logo" src="@/assets/images/logo.png"/>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="menu">
