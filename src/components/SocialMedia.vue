@@ -1,35 +1,22 @@
 <template>
-  <a>
-    <v-btn
-
-      fab
-      class="facebook ma-2"
-      color="info"
-      @click=push(path)
-    >
-      <v-icon dark>mdi-facebook</v-icon>
-    </v-btn>
-    <v-btn
-      fab
-      class="mdi-youtube"
-      color="info"
-      @click=push(path_yt)
-    >
-      <v-icon dark>mdi-youtube</v-icon>
-    </v-btn>
-  </a>
+  <div>
+    <v-icon class="ma-2" :dark="dark" large  @click=push(paths.fb)>mdi-facebook</v-icon>
+    <v-icon class="ma-2" :dark="dark" large  @click=push(paths.yt)>mdi-youtube</v-icon>
+  </div>
 </template>
 <script>
   export default {
-    props: {
-      large: {
+    props:{
+      dark: {
         type: Boolean,
-        default: false
+        default: true
       }
     },
     data: () => ({
-      path: 'https://www.facebook.com/POMOCDROGOWABOGUSLAWSKI/',
-      path_yt: 'https://www.youtube.com/watch?v=v9TO6dIcF0A'
+      paths: {
+        fb: 'https://www.facebook.com/POMOCDROGOWABOGUSLAWSKI/',
+        yt: 'https://www.youtube.com/watch?v=v9TO6dIcF0A'
+      }
     }),
     methods: {
       push(path) {
